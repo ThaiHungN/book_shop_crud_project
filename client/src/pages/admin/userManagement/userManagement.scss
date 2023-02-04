@@ -1,0 +1,32 @@
+.user-management{
+    .wrapper{
+        display: flex;
+        justify-content: center;
+
+        table{
+            margin-top: 3rem;
+
+            tr{
+                // padding: 1rem 0;
+                // display: block;
+                
+                td{
+                    padding: 1rem 0;
+                    width: 7rem;
+                    text-align: center;
+                }
+
+                th{
+                    width: 7rem;
+                    padding-bottom: 1rem;
+
+                    .add-product{
+                        
+                        font-size: 1.4rem;
+
+                    }
+                }
+            }
+        }
+    }
+}

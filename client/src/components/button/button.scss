@@ -1,0 +1,26 @@
+.button{
+    margin: 1.5rem 1rem 2rem 0;
+    border-radius: 0.5rem;
+    text-align: center;
+
+    transition-property: opacity;
+    transition-duration: 300ms;
+    transition-timing-function: linear;
+
+    &:hover{
+        cursor: pointer;
+        opacity: 0.6;
+    }
+
+    img{
+        width: 1.2rem;
+        margin-right: 0.5rem;
+    }
+}
+
+.unclickable{
+    &:hover{
+        cursor: auto;
+        opacity: 1;
+    }
+}

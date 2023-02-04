@@ -1,0 +1,77 @@
+.product-management{
+    .wrapper{
+        display: flex;
+        justify-content: center;
+
+        table{
+            margin-top: 3rem;
+
+            tr{
+                // padding: 1rem 0;
+                // display: block;
+                
+                td{
+                    padding: 1rem 0;
+                    width: 7rem;
+                    text-align: center;
+                }
+
+                th{
+                    width: 7rem;
+                    padding-bottom: 1rem;
+
+                    .add-product{
+                        
+                        font-size: 1.4rem;
+
+                    }
+                }
+
+                .btn{
+                    color: rgb(45, 82, 136);
+                    &:hover{
+                        cursor: pointer;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+        .thumbnail{
+            position: absolute;
+            top: 10rem;
+            left: 40vw;
+
+            background: #ffffff;
+
+            width: 20vw;
+            
+            .header{
+                height: 2rem;
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                
+                .close{
+                    margin-right: 0.5rem;
+
+                    font-weight: bold;
+
+                    &:hover{
+                        cursor: pointer;
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            .content{
+                width: 100%;
+
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,75 @@
+// register.scss
+
+.edit{
+    .main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        .form{
+            // height: 30rem;
+            width: 31rem;
+
+            // background-color: red;
+
+            margin-top: 1rem;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+
+            .header{
+                font-style: normal;
+                font-weight: 700;
+                font-size: 2rem;
+                line-height: 2.5rem;
+                color: #000000;
+                margin-bottom: 2rem;
+            }
+
+            .form-input{
+                margin-top: 1.5rem;
+                width: 100%;
+
+                &:nth-child(2){
+                    margin-top: 0;
+                }
+
+                input{
+                    // width: 29.5rem;
+                    width: 100%;
+                    box-sizing: border-box;
+                    height: 3.3rem;
+
+                    border: 0.0625rem solid #3D3D3D;
+                    border-radius: 0.25rem;
+
+                    padding: 0.3rem 0 0.3rem 1.5rem;
+
+                    font-size: 0.9rem;
+                }
+
+                input[type=text]{
+                    outline: none;
+                }
+            }
+
+            .auth-help{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 2rem;
+            }
+        }
+    }
+    
+    .footer {
+        .padding {
+            height:3.625rem;
+        }
+    }
+}
+
