@@ -1,0 +1,111 @@
+POST http://localhost/auth/register.php HTTP/1.1
+content-type: application/json
+
+{
+    "email": "hungnt",
+    "name": "test name"
+}
+
+###
+
+POST http://localhost/auth/login.php HTTP/1.1
+content-type: application/json
+
+{
+    "email": "hungnt"
+}
+
+###
+
+POST http://localhost/auth/session.php HTTP/1.1
+content-type: application/json
+
+{
+    "token": "00325d69d1eea6f08becea40379d81c4"
+}
+
+###
+
+POST http://localhost/product/create.php HTTP/1.1
+content-type: application/json
+
+{
+    "name": "test name 2",
+    "author": "test author 2",
+    "price": 25000,
+    "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHlYOeS4p9S5_lK4UcLvo03SPxOW5iv9GUgSG5xRo&s",
+    "number": 20,
+    "token": "c1d8faf77540843ad3c91f5858556baa"
+}
+
+###
+
+GET http://localhost/product/read.php HTTP/1.1
+
+###
+
+DELETE http://localhost/product/delete.php HTTP/1.1
+content-type: application/json
+
+{
+    "id": 1,
+    "token": "c1d8faf77540843ad3c91f5858556baa"
+}
+
+###
+
+GET http://localhost/product/readone.php?id=2 HTTP/1.1
+
+###
+
+PUT http://localhost/product/update.php HTTP/1.1
+content-type: application/json
+
+{
+    "name": "test name 222",
+    "author": "test author 2",
+    "price": 25000,
+    "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHlYOeS4p9S5_lK4UcLvo03SPxOW5iv9GUgSG5xRo&s",
+    "number": 20,
+    "token": "c1d8faf77540843ad3c91f5858556baa",
+    "id": 4
+}
+
+###
+
+GET http://localhost/user/read.php HTTP/1.1
+
+###
+
+GET http://localhost/user/readone.php?id=2 HTTP/1.1
+
+###
+
+PATCH http://localhost/user/update.php HTTP/1.1
+content-type: application/json
+
+{
+    "name": "new name",
+    "token": "2c63de0688c68bf5a856b7f63a0978b4",
+    "id": 2
+}
+
+###
+
+POST http://localhost/cart/payment.php HTTP/1.1
+content-type: application/json
+
+{
+    "id": 2,
+    "token": "c1d8faf77540843ad3c91f5858556aa"
+}
+
+###
+
+POST http://localhost/upload/file.php HTTP/1.1
+content-type: application/json
+
+{
+    "id": 2,
+    "token": "c1d8faf77540843ad3c91f5858556aa"
+}
